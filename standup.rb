@@ -8,10 +8,10 @@ class StandupGenerator
 
   def generate
     puts "Today: "
-    print_generated_text(get_tasks(@text), 3)
+    print_generated_text(get_tasks(@text), rand(3)+1)
 
     puts "\nYesterday: "
-    print_generated_text(get_tasks(@text), 3)
+    print_generated_text(get_tasks(@text), rand(3)+1)
 
     puts "\nBlockers: "
     print_generated_text(get_blockers(@text), 1)
