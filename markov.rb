@@ -52,6 +52,6 @@ class MarkovChainTextGenerator
       .gsub(/,|:/,'') # just strip commas/colons
       .split(". ")
       .map { |s| s.gsub(/\./,'')} # make sure we kill any extra full stops afterward
-      .each { |s| s[0] = s[0].capitalize } # make sure the first letter of each sentence is capitalized
+      # .each { |s| s[0] = s[0]&.capitalize } # make sure the first letter of each sentence is capitalized
   end
 end

@@ -4,6 +4,6 @@ Use Markov chains to generate your standup text automatically
 
 ## Usage
 
-`ruby standup.rb standup-log.txt`
+Copy your Geekbot standup logs into a file (directly from Slack) and pass it to the script like this:
 
-You can also just pass a string, e.g. `ruby standup.rb 'Today I ...'`
+`ruby standup.rb standup-log.txt`
